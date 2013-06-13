@@ -38,7 +38,7 @@ namespace GoogleTTS
 
         private void btnPlayClicked(object sender, RoutedEventArgs e)
         {
-            string pathx = "http://translate.google.com/translate_tts?tl=en&q=Windows";
+            string pathx = "http://translate.google.com/translate_tts?tl=en&q="+tb1.Text;
             medEle.Source = new Uri(pathx, UriKind.RelativeOrAbsolute);
             medEle.Play();
         }
