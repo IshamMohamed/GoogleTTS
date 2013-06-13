@@ -1,0 +1,17 @@
+<Page
+    x:Class="GoogleTTS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GoogleTTS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF93DB15">
+        <Button x:Name="btnPlay" Content="Speak" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="534,404,0,0" Height="144" Width="290" Click="btnPlayClicked"/>
+        <MediaElement x:Name="backgroundMusic" AudioCategory="BackgroundCapableMedia"/>
+        <MediaElement x:Name="medEle" AudioCategory="BackgroundCapableMedia"  Height="100" Width="100"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="422,367,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="522"/>
+        <ProgressRing x:Name="prgrsRing_Copy" HorizontalAlignment="Left" IsActive="False" Margin="1136,562,0,0" VerticalAlignment="Top" Height="206" Width="230" RenderTransformOrigin="0.523,0.545" Foreground="White"/>
+    </Grid>
+</Page>
